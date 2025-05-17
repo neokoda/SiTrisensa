@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <data noupdate="0">
+
+    <record id="asset_laptop" model="custom.asset">
+      <field name="name">Laptop Dell XPS 13</field>
+      <field name="description">High performance ultrabook for office use</field>
+      <field name="stock">5</field>
+      <field name="price">15000000</field> <!-- price in local currency -->
+    </record>
+
+    <record id="asset_projector" model="custom.asset">
+      <field name="name">Epson Projector</field>
+      <field name="description">HD projector for presentations and meetings</field>
+      <field name="stock">2</field>
+      <field name="price">8000000</field>
+    </record>
+
+    <record id="asset_office_chair" model="custom.asset">
+      <field name="name">Ergonomic Office Chair</field>
+      <field name="description">Comfortable chair with lumbar support</field>
+      <field name="stock">10</field>
+      <field name="price">1200000</field>
+    </record>
+
+  </data>
+</odoo>

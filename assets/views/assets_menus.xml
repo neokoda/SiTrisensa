@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Action to list Assets -->
+    <record id="action_list_custom_asset" model="ir.actions.act_window">
+        <field name="name">Daftar Aset</field>
+        <field name="res_model">custom.asset</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <!-- Root menu for Assets -->
+    <menuitem id="custom_asset_root_menu"
+              name="Aset"
+              sequence="10"/>
+
+    <!-- Sub-menu: Asset List -->
+    <menuitem id="custom_asset_menu"
+              name="Daftar Aset"
+              parent="custom_asset_root_menu"
+              action="action_list_custom_asset"
+              sequence="1"/>
+
+</odoo>
