@@ -3,13 +3,13 @@
     <record id="action_list_cat" model="ir.actions.act_window">
         <field name="name">Daftar Kucing</field>
         <field name="res_model">cats.cat</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">list,form</field>
     </record>
 
     <record id="action_list_cat_type" model="ir.actions.act_window">
         <field name="name">Daftar Jenis Kucing</field>
         <field name="res_model">cats.cat.type</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">list,form</field>
     </record>
 
     <menuitem id="cats_root_menu" 
