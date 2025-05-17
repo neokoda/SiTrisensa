@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="action_list_hr_employee" model="ir.actions.act_window">
+        <field name="name">Daftar Karyawan</field>
+        <field name="res_model">hr.employee</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="hr_employee_root_menu"
+              name="Karyawan"
+              sequence="10"/>
+
+    <menuitem id="hr_employee_menu"
+              name="Daftar Karyawan"
+              parent="hr_employee_root_menu"
+              action="action_list_hr_employee"
+              sequence="1"/>
+
+</odoo>
