@@ -33,28 +33,4 @@
         </field>
     </record>
 
-    <!-- Root menu for assets -->
-    <menuitem id="menu_custom_asset_root"
-              name="Assets"
-              sequence="20"/>
-
-    <!-- Action to list assets -->
-    <record model="ir.actions.act_window" id="action_custom_asset">
-        <field name="name">Assets</field>
-        <field name="res_model">custom.asset</field>
-        <field name="view_mode">list,form</field>
-        <field name="help" type="html">
-            <p class="o_view_nocontent_smiling_face">
-                Create your first asset
-            </p>
-        </field>
-    </record>
-
-    <!-- Menu item for assets list -->
-    <menuitem id="menu_custom_asset"
-              name="Assets List"
-              parent="menu_custom_asset_root"
-              action="action_custom_asset"
-              sequence="10"/>
-
 </odoo>
