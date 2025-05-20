@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+  <record model="ir.ui.view" id="custom_order_form_view">
+    <field name="name">custom.order.form</field>
+    <field name="model">custom.order</field>
+    <field name="type">form</field>
+    <field name="arch" type="xml">
+      <form string="Order Form">
+        <sheet>
+          <group string="Order Details">
+            <field name="name"/>
+            <field name="orderedby"/>
+            <field name="date_order"/>
+            <field name="status" widget="selection"/>
+            <field name="price"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+</odoo>

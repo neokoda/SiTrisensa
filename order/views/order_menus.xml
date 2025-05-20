@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Action to list Order -->
+    <record id="action_list_custom_order" model="ir.actions.act_window">
+        <field name="name">Daftar Pemesanan</field>
+        <field name="res_model">custom.order</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <!-- Root menu for Order -->
+    <menuitem id="custom_order_root_menu"
+              name="Order"
+              sequence="10"/>
+
+    <!-- Sub-menu: Order List -->
+    <menuitem id="custom_order_menu"
+              name="Daftar Pemesanan"
+              parent="custom_order_root_menu"
+              action="action_list_custom_order"
+              sequence="1"/>
+
+</odoo>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Tree (List) View -->
+    <record model="ir.ui.view" id="view_custom_order_list">
+        <field name="name">custom.order.list</field>
+        <field name="model">custom.order</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="orderedby"/>
+                <field name="date_order"/>
+                <field name="status" widget="selection"/>
+                <field name="price"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record model="ir.ui.view" id="view_custom_order_form">
+        <field name="name">custom.order.form</field>
+        <field name="model">custom.order</field>
+        <field name="arch" type="xml">
+            <form string="Order">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="orderedby"/>
+                        <field name="date_order"/>
+                        <field name="status" widget="selection"/>
+                        <field name="price"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>

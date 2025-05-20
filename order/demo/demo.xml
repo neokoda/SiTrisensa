@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <data noupdate="0">
+
+    <record id="order_laptop" model="custom.order">
+      <field name="name">Laptop Dell XPS 13</field>
+      <field name="orderedby">Joko Minto</field>
+      <field name="date_order" eval="datetime.now()"/>
+      <field name="status">waiting</field>
+      <field name="price">15000000</field> <!-- price in local currency -->
+    </record>
+
+    <record id="order_projector" model="custom.order">
+      <field name="name">Epson Projector</field>
+      <field name="orderedby">Hidup Jokowi</field>
+      <field name="date_order" eval="datetime.now()"/>
+      <field name="status">waiting</field>
+      <field name="price">8000000</field>
+    </record>
+
+    <record id="order_office_chair" model="custom.order">
+      <field name="name">Ergonomic Office Chair</field>
+      <field name="orderedby">Wiwok detok</field>
+      <field name="date_order" eval="datetime.now()"/>
+      <field name="status">accepted</field>
+      <field name="price">1200000</field>
+    </record>
+
+  </data>
+</odoo>
